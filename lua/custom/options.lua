@@ -40,3 +40,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
         })
     end
 })
+
+vim.g.netrw_banner = false
+vim.g.netrw_browse_split = 4
+vim.g.netrw_altv = true
