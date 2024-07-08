@@ -104,6 +104,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
     set("n", "gD", vim.lsp.buf.declaration, { buffer = 0 })
     set("n", "gT", vim.lsp.buf.type_definition, { buffer = 0 })
     set("n", "K", vim.lsp.buf.hover, { buffer = 0 })
+    set("i", "<C-h>", vim.lsp.buf.signature_help, { buffer = 0 })
 
     set("n", "[d", vim.diagnostic.goto_next, { buffer = 0 })
     set("n", "]d", vim.diagnostic.goto_prev, { buffer = 0 })
